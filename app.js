@@ -18,6 +18,14 @@ app.get('/forum', (req, res) => {
     res.render('forum')
 })
 
+app.get('/login', (req, res) => {
+    res.render('login')
+})
+
+app.get('/registro', (req, res) => {
+    res.render('registro')
+})
+
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 

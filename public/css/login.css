@@ -98,9 +98,13 @@ body *{
     cursor: pointer;
 }
 
-.link{
+.link-button{
     text-decoration: none;
     color: #ffffff;
+}
+
+.link{
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1000px) {
