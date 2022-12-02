@@ -26,6 +26,18 @@ app.get('/registro', (req, res) => {
     res.render('registro')
 })
 
+app.get('/perfil/usuario', (req, res) => {
+    res.render('perfil')
+})
+
+app.get('/admin', (req, res) => {
+    res.render('admin')
+})
+
+app.get('/blog', (req, res) => {
+    res.render('blog')
+})
+
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 

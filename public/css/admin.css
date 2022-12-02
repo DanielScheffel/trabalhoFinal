@@ -1,28 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 :root{
     --light-color:#777;
     --border:.1rem solid rgba(0,0,0,.2);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-*{
-    box-sizing: border-box;
-}
-
-body{
+.container {
+    width: 100vw;
+    height: 100vh;
     background: #eaebed;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
 
-button{
-    border: 0;
-    padding: 0;
-    font-family: Arial;
-    background: transparent;
-    color: Arial;
+.card {
+    width: 500px;
+    height: 250px;
+    background: #07182E;
+    border-radius: 5px;
+    text-align: center;
+    color: #f0f0f0;
+    font-family: inherit;
+    z-index: 1;
+  }
+  
+  .img {
+    display: flex;
+    margin: 60px auto 10px auto;
+    width: 75px;
+    height: 75px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 99;
+    background-color: #152f50;
+  }
+  
+  p {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .heading {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  svg {
+    padding: 0 5px;
     cursor: pointer;
-}
+  }
+  
+  .card:hover .img {
+    transform: scale(1.1);
+    border: 1px solid #f0f0f0;
+  }
+  
+  .card:hover h1,
+  .card:hover p {
+    opacity: 1;
+  }
 
-.header{
+  .header{
     position: fixed;
     top:0; left:0; right:0;
     z-index: 1000;
@@ -114,79 +158,4 @@ button{
 
 #menu-bars{
     display: none;
-}
-
-.button-link{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-/*MAIN parte da página*/
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-container{
-    width: 60vh;
-    height: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0 0 10px;
-    background: #C0C0C0;
-    border-radius: 10px;
-    padding: 1.5em;
-}
-
-.section-container2{
-    width: 60vh;
-    height: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #C0C0C0;
-    margin-left: 15px;
-    border-radius: 10px;
-    padding: 1.5em;
-}
-
-.card-question{
-
-}
-
-.title-question{
-    font-size: 25px;
-    font-weight: 900;
-    color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-p{
-    color: #000000;
-    font-size: 20px;
-    font-family: Montserrat
-}
-
-.link{
-    margin-top: .5rem;
-    padding-top: 6rem;
-    display: flex;
-    align-items: center;
-}
-
-.icon{
-    text-decoration: none;
-    color: #000000;
-}
-
-.icon:hover{
-    color: #363636;
 }
